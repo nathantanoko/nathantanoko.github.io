@@ -1,6 +1,3 @@
-// Only list technologies you have genuinely used. No skill percentages —
-// they're subjective. Categories + badges communicate this more honestly.
-
 export const skillCategories = [
   {
     category: "Programming Skills",
@@ -54,7 +51,7 @@ export const skillCategories = [
 ];
 
 export const currentlyLearning = [
-  "Tailwind CSS",
+  "Laravel",
   "Next.js",
   "Cloud Computing",
 ];

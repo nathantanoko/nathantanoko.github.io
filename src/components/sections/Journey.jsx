@@ -63,6 +63,25 @@ export default function Journey() {
                   </ul>
                 </div>
               )}
+
+              {item.evidenceImages?.length > 0 && (
+                <div className="mt-4">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ink-faint">
+                    Evidence
+                  </p>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                    {item.evidenceImages.map((image) => (
+                      <Card key={image.src} as="figure" className="overflow-hidden p-0">
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="h-64 w-full object-cover object-center"
+                        />
+                      </Card>
+                    ))}
+                  </div>
+                </div>
+              )}
             </Card>
           </li>
         ))}

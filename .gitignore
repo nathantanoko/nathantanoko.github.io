@@ -4,3 +4,4 @@ dist
 *.log
 PRD.md
 README.md
+.env

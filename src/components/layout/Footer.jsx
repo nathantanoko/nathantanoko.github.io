@@ -18,7 +18,7 @@ export default function Footer() {
           <a href={profile.linkedin} aria-label="LinkedIn" className="text-ink-muted hover:text-ink">
             <Linkedin size={18} />
           </a>
-          <a href={`mailto:${profile.email}`} aria-label="Email" className="text-ink-muted hover:text-ink">
+          <a href={`mailto:${profile.email}`} aria-label="Email" className="text-ink-muted hover:text-ink" target="_blank" rel="noopener noreferrer">
             <Mail size={18} />
           </a>
         </div>

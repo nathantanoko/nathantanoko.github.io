@@ -1,6 +1,7 @@
-import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowRight, Instagram } from "lucide-react";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
+import ResumePreviewDialog from "../ui/ResumePreviewDialog";
 import { profile } from "../../data/profile";
 
 export default function Hero() {
@@ -39,9 +40,11 @@ export default function Hero() {
               <Button as="a" href="#contact" variant="secondary">
                 Contact Me
               </Button>
-              <Button as="a" href={profile.resumeUrl} variant="secondary">
-                Download Resume
-              </Button>
+              <ResumePreviewDialog
+                preview={profile.resumeUrl}
+                triggerLabel="Download Resume"
+                triggerVariant="secondary"
+              />
             </div>
 
             <div className="animate-fade-up mt-8 flex items-center gap-4">
@@ -63,8 +66,19 @@ export default function Hero() {
                 href={`mailto:${profile.email}`}
                 aria-label={`Email ${profile.name}`}
                 className="text-ink-muted transition-colors hover:text-ink"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Mail size={20} />
+              </a>
+              <a
+                href={profile.instagram}
+                aria-label={`${profile.name}'s Instagram profile`}
+                className="text-ink-muted transition-colors hover:text-ink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram size={20} />
               </a>
             </div>
           </div>

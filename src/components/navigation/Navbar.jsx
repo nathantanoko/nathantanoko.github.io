@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Container from "../layout/Container";
-import Button from "../ui/Button";
+import ResumePreviewDialog from "../ui/ResumePreviewDialog";
 import { profile } from "../../data/profile";
 
 const links = [
@@ -46,9 +46,12 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Button as="a" href={profile.resumeUrl} variant="secondary" className="text-sm">
-            Resume
-          </Button>
+          <ResumePreviewDialog
+            preview={profile.resumeUrl}
+            triggerLabel="Resume"
+            triggerVariant="secondary"
+            triggerClassName="text-sm"
+          />
         </div>
 
         <button
@@ -78,14 +81,12 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button
-              as="a"
-              href={profile.resumeUrl}
-              variant="secondary"
-              className="mt-2 w-full text-sm"
-            >
-              Download Resume
-            </Button>
+            <ResumePreviewDialog
+              preview={profile.resumeUrl}
+              triggerLabel="Download Resume"
+              triggerVariant="secondary"
+              triggerClassName="mt-2 w-full text-sm"
+            />
           </Container>
         </nav>
       )}

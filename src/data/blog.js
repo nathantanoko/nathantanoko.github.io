@@ -1,6 +1,3 @@
-// Static, data-driven blog for the MVP. Add new entries here — no CMS
-// required yet. Each entry can link to a future full article route.
-
 export const blogPosts = [
   {
     slug: "first-post",

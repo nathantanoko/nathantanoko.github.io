@@ -2,7 +2,7 @@ import heroImage from "../assets/nathan_tanoko.png";
 
 export const profile = {
   name: "Nathan Tanoko",
-  title: "Junior Fullstack Developer & Junior Cloud Engineer",
+  title: "IT Enthusiast | Software Engineer | Cloud Engineer | Fullstack Developer",
   tagline:
     "Fresh graduate building end-to-end applications and scalable cloud solutions.",
   location: "Bekasi, Indonesia",
@@ -10,15 +10,29 @@ export const profile = {
   email: "tanokonathan@gmail.com",
   github: "https://github.com/nathantanoko",
   linkedin: "https://www.linkedin.com/in/nathan-tanoko",
-  resumeUrl: "https://drive.google.com/file/d/1-P57Qt6Zqg0RoLG6SAgGGyHPQlETsSRq/view?usp=sharing",
+  instagram: "https://www.instagram.com/nathan_tanoko",
+  resumeUrl: {
+    title: "Choose your CV version",
+    description:
+      "Pick the CV format that fits your need. Both links open in a new tab so you can preview or download them directly from Google Drive.",
+    links: [
+      {
+        label: "English CV",
+        href: "https://drive.google.com/file/d/1M5UxpbH-Ue_FJ23RyhmdOz1HyQVaeVSN/view?usp=sharing",
+      },
+      {
+        label: "CV Indonesia",
+        href: "https://drive.google.com/file/d/18qSrR2MlYVDAadywzJHu-G8rpm9EBhi4/view?usp=sharing",
+      },
+    ],
+  },
   heroImage,
-  primaryStack: ["React", "JavaScript", "Tailwind CSS"],
 };
 
 export const quickProfile = [
-  { label: "Target Role", value: "Junior Fullstack Developer | Junior Cloud Engineer" },
+  { label: "Focus", value: "Software Engineer | Cloud Engineer | Fullstack Developer" },
   { label: "Current Status", value: "Fresh Graduate" },
-  { label: "Primary Stack", value: "React | Laravel" },
+  { label: "Primary Stack", value: "React | Laravel | GCP" },
   { label: "Availability", value: "Open to opportunities" },
 ];
 
